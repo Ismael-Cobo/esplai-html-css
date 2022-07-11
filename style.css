@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  background-color: beige;
+}
+
+h1 {
+  color: brown;
+}
+
+.photo {
+  width: 150px;
+  height: 200px;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.fnt_red {
+  color: red;
+}
+
+.fnt_blue {
+  color: blue;
+}
+
+.titulo {
+  color: mediumaquamarine;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.texto {
+  color: darkblue;
+  font-size: 15px;
+}
+
+.destacado {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#nombre_alumno {
+  color: red;
+  text-decoration: underline;
+}

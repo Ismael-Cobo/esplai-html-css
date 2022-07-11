@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cuadrado__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cuadrado {
+  width: 200px;
+  height: 200px;
+  color: white;
+  border-radius: 10px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-left {
+  background-color: red;
+}
+
+.top-right {
+  background-color: green;
+}
+
+.top-right i {
+  transform: rotate(90deg);
+}
+
+.bottom-left {
+  background-color: blue;
+}
+
+.bottom-left i {
+  transform: rotate(270deg);
+}
+
+.bottom-right {
+  background-color: black;
+}
+
+.bottom-right i {
+  transform: rotate(180deg);
+}

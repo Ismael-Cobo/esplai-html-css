@@ -1,0 +1,74 @@
+.ej4__container {
+  margin-top: 2rem;
+}
+
+.ej4__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  gap: 1rem;
+}
+
+.ej4__card {
+  border-radius: 10px;
+  border: 1px solid black;
+  height: auto;
+}
+
+.ej4__image_box {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.ej4__icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  background-color: lightgreen;
+  width: 25px;
+  height: 25px;
+  color: white;
+  border-radius: 9999px;
+}
+
+.ej4__icon::before {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.ej4__photo {
+  width: -webkit-fill-available;
+  height: 200px;
+}
+
+.ej4__bottom {
+  padding: 0.5rem;
+}
+
+.ej4__botton__price,
+.ej4__botton__name {
+  font-weight: bold;
+}
+
+.ej4__icons__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.ej4__icons {
+  width: 26px;
+  height: auto;
+}
+
+.heart_icon {
+  fill: red;
+}
+
+.mail_icon {
+  fill: aqua;
+}

@@ -1,0 +1,33 @@
+.ej8__container {
+  margin-top: 2rem;
+}
+
+.ej8__minesweeper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 600px;
+  gap: 2rem;
+}
+
+.ej8__bomb {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mina:hover {
+  background-color: red;
+}
+
+.mina i {
+  font-size: 25px;
+  display: none;
+}
+
+.mina:hover i {
+  display: block;
+}
