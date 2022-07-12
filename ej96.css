@@ -1,0 +1,43 @@
+.ej96__container {
+  margin-top: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card__top {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.card__top img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card__bottom {
+  padding: 1rem;
+}
+
+.card__bottom a {
+  padding: 1rem;
+  background-color: #1976D2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+}
