@@ -11,12 +11,12 @@
 .card {
   border: 1px solid black;
   border-radius: 10px;
+  height: auto;
 }
 
 .card__top {
   display: flex;
   justify-content: center;
-  height: 50%;
 }
 
 .card__top img {
@@ -24,10 +24,14 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  border: 1px solid red;
 }
 
 .card__bottom {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__bottom a {

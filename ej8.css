@@ -19,6 +19,10 @@
   justify-content: center;
 }
 
+.ej8__bomb:hover {
+  background-color: green;
+}
+
 .mina:hover {
   background-color: red;
 }
