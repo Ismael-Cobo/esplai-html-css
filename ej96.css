@@ -4,7 +4,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 
@@ -12,11 +12,15 @@
   border: 1px solid black;
   border-radius: 10px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__top {
   display: flex;
   justify-content: center;
+  height: -webkit-fill-available;
 }
 
 .card__top img {
