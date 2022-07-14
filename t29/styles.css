@@ -28,7 +28,13 @@ a {
 
 .d-flex {
   display: flex;
+  gap: 1rem;
+}
 
+@media screen and (max-width: 992px) {
+  .d-flex {
+    flex-direction: column;
+  }
 }
 
 .container {
@@ -101,4 +107,8 @@ a {
 
 .article__section__title {
   color: #BF823B;
+}
+
+.article__img {
+  max-width: 300px;
 }
