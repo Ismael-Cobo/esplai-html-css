@@ -27,27 +27,45 @@
       </aside>
       <article class="article">
         <h3 class="article__main__title">Especies del parque</h3>
-        <section class="article__section">
-          <h4 class="article__section__title">Nutria</h4>
-          <p>La nutria europea o paleártica (Lutra lutra) es un mamífero carnívoro de hábitat acuático. Se alimenta de
-            peces, ranas y pequeñas presas que caza en el río. Cerca de sus lugares de cobijo, podremos ver toboganes
-            que crean para llegar rápidamente al agua.</p>
-        </section>
-        <section class="article__section">
-          <h4 class="article__section__title">Buitre leonado</h4>
-          <p>El buitre leonado (Gyps fulvus) es un ave rapaz, una de las mayores que puede encontrarse en la Península
-            Ibérica. Su alimentación principal es la carroña, que localiza con su aguda vista.</p>
-        </section>
-        <section class="article__section">
-          <h4 class="article__section__title">Gineta</h4>
-          <p>La gineta (Genetta genetta) es una especie de mamífero carnívoro. Son grandes trepadoras, muy ágiles y
-            grandes cazadoreas de pequeños animales. Aunque tambien se alimentan de los frutos del bosque que se peden
-            encontrar en el parque.</p>
-        </section>
+        <div class="d-flex">
+          <div>
+            <section class="article__section" onmouseover="mouseOver('nutria')">
+              <h4 class="article__section__title">Nutria</h4>
+              <p>La nutria europea o paleártica (Lutra lutra) es un mamífero carnívoro de hábitat acuático. Se alimenta
+                de
+                peces, ranas y pequeñas presas que caza en el río. Cerca de sus lugares de cobijo, podremos ver
+                toboganes
+                que crean para llegar rápidamente al agua.</p>
+            </section>
+            <section class="article__section" onmouseover="mouseOver('buitre_leonado')">
+              <h4 class="article__section__title">Buitre leonado</h4>
+              <p>El buitre leonado (Gyps fulvus) es un ave rapaz, una de las mayores que puede encontrarse en la
+                Península
+                Ibérica. Su alimentación principal es la carroña, que localiza con su aguda vista.</p>
+            </section>
+            <section class="article__section" onmouseover="mouseOver('gineta')">
+              <h4 class="article__section__title">Gineta</h4>
+              <p>La gineta (Genetta genetta) es una especie de mamífero carnívoro. Son grandes trepadoras, muy ágiles y
+                grandes cazadoreas de pequeños animales. Aunque tambien se alimentan de los frutos del bosque que se
+                peden
+                encontrar en el parque.</p>
+            </section>
+          </div>
+          <img id="foto" src="./img/nutria.jpg" alt="nutria">
+        </div>
+
       </article>
     </div>
   </main>
 
 </body>
+<script>
+  const imagen = document.getElementById('foto')
+
+  const mouseOver = (img) => {
+    imagen.src = `./img/${img}.jpg`
+    img.alt = img
+  }
+</script>
 
 </html>
